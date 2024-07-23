@@ -1,7 +1,28 @@
+/* styles/globals.css */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Custom styles */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #F8EDED;
 }
+
+nav ul {
+  display: none;
+}
+nav button {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+  nav button {
+    display: none;
+  }
+}
+
