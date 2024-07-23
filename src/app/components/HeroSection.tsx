@@ -75,7 +75,9 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0 }}
           onClick={() => console.log('Buy Tickets button clicked')}
         >
+          <a target="_blank" href="https://www.ticketspice.com">
           Buy Tickets
+          </a>
         </motion.button>
       </div>
     </div>
