@@ -8,7 +8,7 @@ interface SectionWrapperProps {
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, title, children }) => {
   return (
-    <section id={id} className="my-20">
+    <section id={id} className="my-20 px-8">
       <h2 className="text-4xl font-bold mb-4 text-secondary">{title}</h2>
       {children}
     </section>

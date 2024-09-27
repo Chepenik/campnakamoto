@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   const textColor = useTransform(
     scrollY,
     [0, 100],
-    ['rgb(255, 255, 255)', 'rgb(255, 255, 255)']
+    ['rgb(255, 130, 37)', 'rgb(255, 130, 37)']
   );
 
   const toggleMenu = () => setIsOpen(!isOpen);
