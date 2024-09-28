@@ -29,10 +29,22 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <motion.nav 
-      style={{ backgroundColor }}
-      className="fixed w-full z-50 transition-all duration-300"
-    >
+    <nav className="nav-wrapper">
+      <Link href="/" className="site-title">
+        Camp Nakamoto
+      </Link>
+      <ul>
+        {navItems.map((item) => (
+          <li className="nav-link" key={item.href}>
+            <Link href={item.href}>{item.label}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+  /*
+  return (
+    <motion.nav className="fixed w-full z-50 transition-all duration-300 nav-wrapper">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <motion.div style={{ color: textColor }}>
           <Link href="/" className="text-2xl font-bold">
@@ -85,9 +97,8 @@ const Navbar: React.FC = () => {
             <Link
               key={item.href}
               href={item.href}
-              className="block py-2 px-4 text-sm text-white hover:bg-gray-800"
-              onClick={toggleMenu}
-            >
+              className="block py-2 px-4 text-sm"
+              onClick={toggleMenu}>
               {item.label}
             </Link>
           ))}
@@ -95,6 +106,9 @@ const Navbar: React.FC = () => {
       )}
     </motion.nav>
   );
+  */
 };
 
 export default Navbar;
+
+

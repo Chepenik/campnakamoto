@@ -17,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-background text-white`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300..700&family=Luckiest+Guy&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${inter.className} site-wrapper`}>
         <Navbar />
         <main className="pt-16">
           {children}

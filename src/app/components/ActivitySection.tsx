@@ -9,7 +9,7 @@ const ActivitySection: React.FC = () => {
       <ul>
           <li>🎤 <strong>Speakers Series</strong>: Engage with the luminaries of the crypto world. Learn, question, and be inspired by industry leaders who've navigated the blockchain before it was cool.</li>
       </ul>
-      <h2>Informal Activities</h2>
+      <h3>Informal Activities</h3>
       <ul>
           <li>🛣️ <strong>Bitcoin Road</strong>: Walk through 'Living CandyLand', but with a twist - it's all about Bitcoins! Solve puzzles, win treats, and maybe even some sats!</li>
           <li>✂️ <strong>Arts & Crafts</strong>: Get hands-on with leather crafting or tie-dyeing. Make something tangible in this digital world. Your wallet's not just for crypto anymore!</li>

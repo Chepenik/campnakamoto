@@ -8,7 +8,7 @@ import HousingSection from './components/HousingSection';
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-background text-accent">
+    <div>
         <HeroSection />
         <LocationSection />
         <SpeakersSection />
