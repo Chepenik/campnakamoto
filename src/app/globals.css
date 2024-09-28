@@ -8,13 +8,12 @@
   --cooler: #4A90E2;
   --cool: #228B22;
   --warm: #DAA520;
-  --warmer: #E97451;
+  --warmer: #F97316;
   --warmest: #8B0000;
   --neutral-dark: #708090;
   --neutral-light: #F5F5F5;
 }
 
-/* Custom styles */
 body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
@@ -30,6 +29,7 @@ nav button {
 .site-wrapper {
   background-color: var(--neutral-light);
 }
+
 
 .nav-wrapper {
   position: fixed;
@@ -48,8 +48,6 @@ nav button {
   font-family: 'Chewy', cursive;
   font-size: 32px;
 }
-
-
 .nav-wrapper .nav-link {
   font-family: 'Fredoka', sans-serif;
   padding-left: 21px;
@@ -57,6 +55,68 @@ nav button {
 }
 .nav-wrapper .nav-link a:hover {
   color: var(--warm);
+}
+
+
+.speaker-card-container {
+  height: 128px;
+  max-height: 128px;
+}
+.speaker-card-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  border: 2px solid var(--warmest);
+  overflow: hidden;
+}
+.speaker-card-body h4 {
+  padding: 0 13px;
+  font-size: 20px;
+  border-bottom-right-radius: 12px;
+  background-color: var(--warmer);
+}
+.speaker-more-info-button {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: flex-end;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+}
+.speaker-more-info-button span {
+  border-top-left-radius: 12px;
+  padding: 2px 12px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--neutral-light);
+  background-color: var(--warmer);
+}
+.speaker-more-info-modal {
+  background-color: var(--coolest);
+}
+
+
+section{
+  max-width: 1200px;
+  margin: 64px auto;
+  padding: 0 16px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+  padding-left: 20px;
 }
 
 h2 {
@@ -69,8 +129,8 @@ h2 {
   border: 2px solid var(--warmest);
   border-radius: 50px;
   box-shadow: 
-      0 0 0 3px var(--neutral-light), /* Inner outline */
-      0 0 0 5px var(--warmest); /* Outer outline */
+      0 0 0 3px var(--neutral-light),
+      0 0 0 5px var(--warmest);
   background-color: var(var(--neutral-light));
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -87,9 +147,7 @@ h3 {
 }
 
 p {
-  font-family: "Fredoka", sans-serif;
-  margin-bottom: 6px;
-  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
@@ -99,5 +157,7 @@ p {
   nav button {
     display: none;
   }
+  section{
+    padding: 0 48px;
+  }
 }
-

@@ -1,8 +1,6 @@
 "use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 interface SpeakerCardProps {
@@ -14,20 +12,10 @@ interface SpeakerCardProps {
 }
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ name, title, imageUrl, onLearnMore }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <CardContainer
-      className="inter-var w-full aspect-[4/5]"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <CardBody className="relative group/card bg-gray-50 dark:bg-gray-900 w-full h-full rounded-xl border-2 border-gray-200 dark:border-gray-700 shadow-xl transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl flex flex-col justify-between overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-60 z-10"></div>
-        <CardItem
-          translateZ={100}
-          className="w-full h-full absolute inset-0"
-        >
+    <CardContainer className="inter-var w-full aspect-[4/5]">
+      <CardBody className="speaker-card-body">
+        <CardItem translateZ={100} className="w-full h-full absolute inset-0">
           <div className="relative w-full h-full">
             <Image
               src={imageUrl}
@@ -35,42 +23,25 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ name, title, imageUrl, onLear
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ objectFit: "cover" }}
-              className="rounded-xl transition-all duration-300 ease-out group-hover/card:scale-110"
+              className="transition-all duration-300 ease-out group-hover/card:scale-110"
             />
           </div>
         </CardItem>
-        <div className="relative z-20 flex flex-col h-full justify-between p-6">
+        <div className="relative z-20 flex flex-col h-full justify-between">
           <div>
-            <CardItem
-              translateZ={50}
-              className="text-2xl font-bold text-gray-200 mb-2"
-            >
-              {name}
+            <CardItem translateZ={50} className="text-2xl font-bold text-gray-200 mb-2">
+              <h4>{name}</h4>
             </CardItem>
           </div>
-          <div className="relative z-20 flex flex-col h-full justify-between my-2 p-6">
-            <CardItem
-              as="p"
-              translateZ={60}
-              className="text-orange-500 text-sm"
-            >
+          <div className="relative z-20 flex flex-col h-full justify-between my-2">
+            <CardItem as="p"translateZ={60} className="text-orange-500 text-sm">
               {title}
             </CardItem>
           </div>
           <div className="m-4 justify-center">
-            <motion.div 
-              animate={{ y: isHovered ? 0 : 0.5 }}
-              transition={{ duration: 0.3 }}
-            >
-              <CardItem
-                translateZ={20}
-                as="button"
-                onClick={onLearnMore}
-                className="px-4 mb-4 rounded-xl bg-orange-500 text-white text-sm font-bold hover:bg-white hover:text-orange-500 border-2 border-transparent hover:border-orange-500"
-              >
-                Learn More
-              </CardItem>
-            </motion.div>
+            <CardItem translateZ={20} as="button" onClick={onLearnMore} className="speaker-more-info-button">
+              <span>Learn More</span>
+            </CardItem>
           </div>
         </div>
       </CardBody>

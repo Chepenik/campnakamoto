@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
-            className="bg-white dark:bg-gray-800 rounded-lg p-8 w-full max-w-md relative shadow-2xl"
+            className="rounded-lg p-8 w-full max-w-md relative shadow-2xl speaker-more-info-modal "
           >
             <button
               onClick={onClose}
