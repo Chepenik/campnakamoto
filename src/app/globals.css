@@ -44,8 +44,6 @@ h2 {
   width: fit-content;
   padding: 8px 16px 0 16px;
   margin-bottom: 26px;
-  font-size: 28px;
-  font-weight: bold;
   color: var(--warmest);
   border: 2px solid var(--warmest);
   border-radius: 50px;
@@ -54,13 +52,16 @@ h2 {
       0 0 0 5px var(--warmest);
   background-color: var(var(--neutral-light));
   font-family: "Luckiest Guy", cursive;
-  font-style: normal;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
   line-height: 36px;
 }
 
 h3 {
   font-family: "Fredoka", cursive;
   font-weight: bold;
+  font-style: normal;
   font-size: 24px;
   margin-top: 16px;
   margin-bottom: 8px;
@@ -139,10 +140,12 @@ p {
 
 .hero-copy {
   font-family: "Fredoka", sans-serif;
+  font-style: italic;
 }
 .hero-copy h1 {
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 3px;
+  text-shadow: 2px 2px 2px #CE5937;
 }
 
 

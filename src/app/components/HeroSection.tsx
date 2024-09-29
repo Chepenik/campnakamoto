@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Welcome to Camp Nakamoto
+          Welcome to<br/>Camp Nakamoto
         </motion.h1>
         <motion.p 
           className="text-xl sm:text-2xl md:text-3xl mb-10 text-white"

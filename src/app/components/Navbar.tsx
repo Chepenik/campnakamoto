@@ -9,11 +9,11 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
-    { href: "#activities", label: "Activities" },
     { href: "#location", label: "Location" },
-    { href: "#housing", label: "Housing" },
     { href: "#speakers", label: "Speakers" },
-    { href: "#perks", label: "Perks" },
+    { href: "#activities", label: "Activities" },
+    { href: "#housing", label: "Housing" },
+    { href: "#dining", label: "Dining" },
   ];
   
   return (
