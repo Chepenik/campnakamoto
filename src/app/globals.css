@@ -100,9 +100,10 @@ p {
   width: 100%;
 }
 .nav-wrapper .site-title {
-  margin-top: -5px;
-  font-family: 'Chewy', cursive;
+  margin-top: 5px;
+  font-family: 'Luckiest Guy', cursive;
   font-size: 30px;
+  letter-spacing: 2px;
 }
 .nav-wrapper .nav-link {
   margin-bottom: 2px;
@@ -135,6 +136,15 @@ p {
 .nav-mobile li a:hover {
   opacity: 0.75;
 }
+
+.hero-copy {
+  font-family: "Fredoka", sans-serif;
+}
+.hero-copy h1 {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 3px;
+}
+
 
 
 .speaker-card-container {

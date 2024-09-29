@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
       {!videoReady && !videoError && (
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       )}
-      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto hero-copy">
         <motion.h1 
           className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -50 }}
