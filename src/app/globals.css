@@ -20,8 +20,9 @@ body {
 }
 
 nav ul {
-  display: none;
+  display: block;
 }
+
 nav button {
   display: block;
 }
@@ -44,6 +45,11 @@ nav button {
   background-color: var(--warmest);
   box-shadow: 0 -15px 35px 25px rgba(0, 0, 0, 0.2);
 }
+.nav-wrapper .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-wrapper .site-title {
   font-family: 'Chewy', cursive;
   font-size: 32px;
@@ -55,6 +61,15 @@ nav button {
 }
 .nav-wrapper .nav-link a:hover {
   color: var(--warm);
+}
+.nav-mobile {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 40%;
+  font-family: "Fredoka", cursive;
+  font-size: 18px;
+  background-color: var(--coolest);
 }
 
 
@@ -133,7 +148,6 @@ h2 {
       0 0 0 5px var(--warmest);
   background-color: var(var(--neutral-light));
   font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
   font-style: normal;
   line-height: 36px;
 }
@@ -151,9 +165,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  nav ul {
-    display: flex;
-  }
   nav button {
     display: none;
   }
