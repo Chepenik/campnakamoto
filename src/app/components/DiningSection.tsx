@@ -6,9 +6,9 @@ const DiningSection: React.FC = () => {
     <SectionWrapper id="dining" title="Dining">
       <h3>Feast Like a Crypto King at Camp Nakamoto</h3>
       <ul>
-          <li>🍴 <strong>Central Dining Hall</strong>: Gather at our central dining hall where the community comes together over meals, turning strangers into blockchain buddies.</li>
-          <li>🍴 <strong>All Meals Included</strong>: From sunrise to sunset, we've got you covered with breakfast, lunch, and dinner. No need to mine for food here!</li>
-          <li>🍴 <strong>Cattleman's Feast</strong>: An epic meal that's the talk of the blockchain. Experience the Cattleman's Feast - where we celebrate our gains with gains on the grill!</li>
+          <li><i>🍴</i><strong>Central Dining Hall</strong>: Gather at our central dining hall where the community comes together over meals, turning strangers into blockchain buddies.</li>
+          <li><i>🍴</i><strong>All Meals Included</strong>: From sunrise to sunset, we've got you covered with breakfast, lunch, and dinner. No need to mine for food here!</li>
+          <li><i>🍴</i><strong>Cattleman's Feast</strong>: An epic meal that's the talk of the blockchain. Experience the Cattleman's Feast - where we celebrate our gains with gains on the grill!</li>
       </ul>
 
       <h3>Weekly Menu Highlights</h3>

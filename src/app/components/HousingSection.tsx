@@ -6,22 +6,25 @@ const HousingSection: React.FC = () => {
     <SectionWrapper id="housing" title="Housing">
       <h3>Welcome to Camp Nakamoto: Where Simplicity Meets Crypto</h3>
       <ul>
-          <li>🏕️ <strong>Cabin & Crypto Await</strong>: Arrive to find your assigned cabin ready, with your luggage waiting like a blockchain for its next block. Your home away from home, already set up for your adventure!</li>
-          <li>❄️🔥 <strong>Nature's Climate Control</strong>: Experience weather as Satoshi intended – unfiltered. Our cabins come with natural AC (that's Air Conditioning or Actual Cold, depending on the night). No thermostat, just the sweet, unpredictable whims of Mother Nature.</li>
-          <li>🔌 <strong>Unfinished, Yet Electrifying</strong>: Our cabins might be rustic, but they've got electricity – perfect for charging your devices or lighting up those late-night crypto discussions. Think of it as 'unfinished luxury'.</li>
-          <li>💧 <strong>Waterfront Living</strong>: Just steps from your cabin, you'll find yourself at the water's edge. Here, the only thing more refreshing than a dip in the lake is the genuine summer camp vibe.</li>
-          <li>🚻 <strong>Communal Crypto-Commodes</strong>: Embrace the community spirit with our common lavatories. Here, you'll share more than just tips on Bitcoin; you'll share the true camp experience.</li>
+          <li><i>🏕️</i><strong>Cabin & Crypto Await</strong>: Arrive to find your assigned cabin ready, with your luggage waiting like a blockchain for its next block. Your home away from home, already set up for your adventure!</li>
+          <li><i>❄️🔥</i><strong>Nature's Climate Control</strong>: Experience weather as Satoshi intended – unfiltered. Our cabins come with natural AC (that's Air Conditioning or Actual Cold, depending on the night). No thermostat, just the sweet, unpredictable whims of Mother Nature.</li>
+          <li><i>🔌</i><strong>Unfinished, Yet Electrifying</strong>: Our cabins might be rustic, but they've got electricity – perfect for charging your devices or lighting up those late-night crypto discussions. Think of it as 'unfinished luxury'.</li>
+          <li><i>💧</i><strong>Waterfront Living</strong>: Just steps from your cabin, you'll find yourself at the water's edge. Here, the only thing more refreshing than a dip in the lake is the genuine summer camp vibe.</li>
+          <li><i>🚻</i><strong>Communal Crypto-Commodes</strong>: Embrace the community spirit with our common lavatories. Here, you'll share more than just tips on Bitcoin; you'll share the true camp experience.</li>
       </ul>
       <h3>Accommodation Tiers:</h3>
       <ul>
-          <li>🔑 <strong>Public Keys Tier</strong>: 
+          <li><i>🔑</i><strong>Public Keys Tier</strong>:
             <ul>
-              <li>Sleep in a six-person cabin featuring 2 bunks and 2 singles. It's like a public ledger - open, shared, and full of potential friends.</li>
+              <li>Sleep in a six-person cabin featuring 2 bunks and 2 singles.<br/>
+              It&apos;s like a public ledger - open, shared, and full of potential friends.</li>
             </ul>
           </li>
-          <li>🔐 <strong>Private Keys Tier</strong>: 
+          <li><i>🔐</i><strong>Private Keys Tier</strong>:
             <ul>
-              <li>Fancy a bit more privacy or bringing a group? Our housing desk will tailor your stay. Expect a contact from us for an upgrade option. Because sometimes, you need your private space to ponder your private keys.</li>
+              <li>Fancy a bit more privacy or bringing a group? Our housing desk will tailor your stay.<br/>
+              Expect a contact from us for an upgrade option.<br/>
+              ...Because sometimes, you need your private space to ponder your private keys.</li>
             </ul>
           </li>
       </ul>

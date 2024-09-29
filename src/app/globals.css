@@ -36,7 +36,7 @@ section{
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   padding-left: 20px;
 }
 
@@ -67,15 +67,18 @@ h3 {
 }
 
 p {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 
 .site-wrapper {
   background-color: var(--neutral-light);
 }
-
+.site-wrapper i {
+  display: inline-block;
+  margin-right: 12px;
+}
 
 .nav-wrapper {
   position: fixed;
@@ -102,6 +105,7 @@ p {
   font-size: 30px;
 }
 .nav-wrapper .nav-link {
+  margin-bottom: 2px;
   font-family: 'Fredoka', sans-serif;
   padding-left: 21px;
   font-size: 22px;
