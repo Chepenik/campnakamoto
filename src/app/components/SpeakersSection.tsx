@@ -44,7 +44,7 @@ const speakers: Speaker[] = [
     title: "",
     twitterHandle: "@jameslavish",
     imageUrl: "/images/james_lavish.jpg",
-    description: "James brings a unique perspective to Bitcoin, influenced by his love for hockey. In hockey, as in Bitcoin, understanding the game's flow, anticipating moves, and playing defense are key. James applies these principles to Bitcoin investment, where patience, strategy, and understanding market momentum are crucial. His analyses often draw parallels between Bitcoin's market dynamics and the strategic gameplay of hockey.",
+    description: "James Lavish, CFA, isn't your average financial guru; he's a reformed hedge-fund manager, an ex-Yale hockey player, and now, a beacon of financial wisdom in a world where money seems to evaporate faster than ice in a microwave. With over 25 years navigating the shark-infested waters of institutional investing, James has dodged more financial icebergs than the Titanic.",
     stats: ""
   },
   {
@@ -52,7 +52,7 @@ const speakers: Speaker[] = [
     title: "",
     twitterHandle: "@michellaweekley",
     imageUrl: "/images/michelle_weekley.jpg",
-    description: "can be used to enhance personal privacy, advocating for tools and practices that protect users' financial sovereignty in an increasingly transparent digital world. Her insights are invaluable for anyone concerned with the privacy implications of digital transactions.",
+    description: "Michelle has navigated a life trajectory that's as colorful as it is profound. With a background in computer science, Michelle spent over 15 years diving deep into the world of early-stage tech startups. Her adventures took her across the globe, from living in the UAE to working in China, where she dipped her toes in Foreign Direct Investment. It was there, amidst the global landscape, she encountered firsthand the corruption that eventually steered her towards the liberating world of Bitcoin in 2016.",
     stats: ""
   },
   {
@@ -76,7 +76,7 @@ const speakers: Speaker[] = [
     title: "",
     twitterHandle: "@modernTman",
     imageUrl: "/images/texas_slim.avif",
-    description: "Texas Slim is revolutionizing agriculture through Bitcoin. Through his Beef Initiative, he's demonstrating how Bitcoin can transform traditional agricultural industries, making them more efficient and decentralized. His approach integrates Bitcoin into everyday cattle ranch life, showing how it can be practical for real-world applications beyond just digital transactions.",
+    description: "Here comes Texas Slim, a man who's as Texan as they come, with a name that sounds like he could've been a character in a spaghetti western, but instead, he's riding the wild plains of the modern food industry. Born and bred in the Lone Star State, Slim has taken the cowboy ethos into the 21st century, lassoing the world of nutrition, agriculture, and blockchain with the finesse of a rodeo champion.",
     stats: ""
   },
   {
