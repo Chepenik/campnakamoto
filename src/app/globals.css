@@ -3,26 +3,209 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom styles */
+:root {
+  --coolest: #1A3A4A;
+  --cooler: #4A90E2;
+  --cool: #228B22;
+  --warm: #DAA520;
+  --warmer: #F97316;
+  --warmest: #8B0000;
+  --neutral-dark: #708090;
+  --neutral-light: #F5F5F5;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  background-color: #F8EDED;
 }
 
 nav ul {
-  display: none;
+  display: block;
 }
+
 nav button {
   display: block;
 }
 
+section{
+  max-width: 1200px;
+  margin: 64px auto;
+  padding: 0 16px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+h2 {
+  width: fit-content;
+  padding: 8px 16px 0 16px;
+  margin-bottom: 26px;
+  color: var(--warmest);
+  border: 2px solid var(--warmest);
+  border-radius: 50px;
+  box-shadow:
+      0 0 0 3px var(--neutral-light),
+      0 0 0 5px var(--warmest);
+  background-color: var(var(--neutral-light));
+  font-family: "Luckiest Guy", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 36px;
+}
+
+h3 {
+  font-family: "Fredoka", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.site-wrapper {
+  background-color: var(--neutral-light);
+}
+.site-wrapper i {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.nav-wrapper {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  color: var(--neutral-light);
+  background-color: var(--warmest);
+  box-shadow: 0 -15px 35px 25px rgba(0, 0, 0, 0.2);
+}
+.nav-wrapper .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-wrapper .site-title {
+  margin-top: 5px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.nav-wrapper .nav-link {
+  margin-bottom: 2px;
+  font-family: 'Fredoka', sans-serif;
+  padding-left: 21px;
+  font-size: 22px;
+}
+.nav-wrapper .nav-link a:hover {
+  color: var(--warm);
+}
+.nav-mobile {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 40%;
+  padding-top: 20px;
+  font-family: "Fredoka", cursive;
+  font-size: 18px;
+  border-bottom-left-radius: 12px;
+  background-color: var(--coolest);
+}
+.nav-mobile li {
+  height: 42px;
+}
+.nav-mobile li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav-mobile li a:hover {
+  opacity: 0.75;
+}
+
+.hero-copy {
+  font-family: "Fredoka", sans-serif;
+  font-style: italic;
+}
+.hero-copy h1 {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 2px #CE5937;
+}
+
+
+
+.speaker-card-container {
+  height: 128px;
+  max-height: 128px;
+}
+.speaker-card-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  border: 2px solid var(--warmest);
+  overflow: hidden;
+}
+.speaker-card-body h4 {
+  padding: 4px 13px;
+  border-bottom-right-radius: 12px;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--coolest);
+  background-color: var(--warmer);
+}
+.speaker-more-info-button {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: flex-end;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+}
+.speaker-more-info-button span {
+  border-top-left-radius: 12px;
+  padding: 8px 12px;
+  font-family: "Fredoka", sans-serif;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: var(--coolest);
+  background-color: var(--warmer);
+}
+.speaker-more-info-modal {
+  background-color: var(--coolest);
+}
+
 @media (min-width: 768px) {
-  nav ul {
-    display: flex;
-  }
   nav button {
     display: none;
   }
+  section{
+    padding: 0 48px;
+  }
 }
-

@@ -73,14 +73,14 @@ const HeroSection: React.FC = () => {
       {!videoReady && !videoError && (
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       )}
-      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto hero-copy">
         <motion.h1 
           className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 text-primary"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Welcome to Camp Nakamoto
+          Welcome to<br/>Camp Nakamoto
         </motion.h1>
         <motion.p 
           className="text-xl sm:text-2xl md:text-3xl mb-10 text-white"
